@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-'''
+"""
 Create Flask app blueprint
-'''
+"""
 from flask import Blueprint
 
 app_view = Blueprint('app_views', __name__, url_prefix='/api/vi')
