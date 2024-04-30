@@ -39,7 +39,7 @@ def delete_users(user_id):
     if user:
         storage.delete(user)
         storage.save()
-        return  jsonify({}), 200
+        return jsonify({}), 200
     else:
         return abort(404)
 
@@ -53,7 +53,7 @@ def create_users(user_id):
     if request.content_type != 'application/json':
         return abort(400, 'Not a JSON')
     if not request.get_json():
-    return abort(400, 'Not a JSON')
+        return abort(400, 'Not a JSON')
     data = request.get_json()
     if 'email' not in data:
         return abort(400, 'Missing name')
