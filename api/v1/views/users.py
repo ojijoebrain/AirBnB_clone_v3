@@ -2,7 +2,7 @@
 """
 Create users etc...
 """
-from flask import jsonify, abort, request
+from flask import jsonify, abort, request, user
 from models.user import User
 from models import storage
 from api.v1.views import app_views
@@ -52,7 +52,7 @@ def create_users(user_id):
     """
     if request.content_type != 'application/json':
         return abort(400, 'Not a JSON')
-    if not request.get_json()
+    if not request.get_json():
     return abort(400, 'Not a JSON')
     data = request.get_json()
     if 'email' not in data:
