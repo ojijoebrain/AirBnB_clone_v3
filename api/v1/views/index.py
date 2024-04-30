@@ -19,7 +19,7 @@ def api_status():
 @app_views.route('/stats')
 def get_stats():
     """
-
+    stats of all objs route
     """
     stats = {
         'amenities': storage.count('Amenity'),

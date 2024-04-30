@@ -27,12 +27,10 @@ def teardown_engine(exception):
 @app.errorhandler(404)
 def not_found(error):
     """
-    handle error 404
+    Error handler for 404 Not Found.
     """
-
-
-response = {"error": "Not found"}
-return jsonify(response), 404
+    response = {"error": "Not found"}
+    return jsonify(response), 404
 
 
 if __name__ == '__main__':
