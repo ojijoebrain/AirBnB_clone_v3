@@ -1,0 +1,15 @@
+" ============================================================================
+" Netrw Directory Listing                                        (netrw v171)
+"   /home/oji/AirBnB_clone_v3/api/v1/views/documentation
+"   Sorted by      name
+"   Sort sequence: [\/]$,\<core\%(\.\d\+\)\=\>,\.h$,\.c$,\.cpp$,\~\=\*$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$
+"   Quick Help: <F1>:help  -:go up dir  D:delete  R:rename  s:sort-by  x:special
+" ==============================================================================
+../                                                                                                                                                                     ./
+amenity/
+city/
+place/
+place_amenity/
+reviews/
+state/
+user/
